@@ -30,6 +30,19 @@
   margin: 0;
 }
 
+._layout ._layout-logo {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding-left: 20px;
+  gap: 20px;
+  font-size: 20px;
+}
+._layout ._layout-logo ._layout-logo-desc {
+  padding-left: 10px;
+  border-left: 1px solid var(--td-gray-color-11);
+  line-height: 40px;
+}
 ._layout .t-menu__logo {
   width: 200px;
   display: flex;
@@ -38,13 +51,13 @@
   gap: 8px;
 }
 ._layout .t-swiper__content {
-  height: calc(100% - 60px);
-  max-height: 970px;
+  height: calc(100% - 200px);
+  max-height: 900px;
 }
 ._layout .swiper-item-text {
   position: absolute;
   text-align: center;
-  top: 30%;
+  top: 45%;
   width: 100%;
 }
 ._layout .swiper-item-text h1 {
@@ -158,7 +171,7 @@
   color: var(--td-brand-color-6);
 }
 .card-title::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 140px;
   height: 4px;
@@ -167,6 +180,9 @@
 }
 .card-btn {
   color: var(--td-brand-color-6);
+}
+.card-desc {
+  font-size: 22px;
 }
 
 .home-card .card:nth-child(odd) {
@@ -190,7 +206,6 @@
   align-items: flex-start;
   margin-top: 20px;
 }
-
 
 ._about-card1 {
   display: flex;
@@ -241,6 +256,58 @@
   padding-right: 10px;
 }
 
+.reason-container {
+  display: flex;
+  gap: 20px;
+}
+.reason-container .title-new {
+  margin-top: 0;
+  font-size: 40px;
+}
+.reason-container .reason-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 20px;
+  position: relative;
+}
+.reason-container .reason-btn-group::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  right: 0;
+  background-color: var(--td-brand-color);
+}
+.reason-container .reason-btn-group .common-button {
+  padding: 10px 30px;
+  background-color: #fff;
+  color: var(--td-brand-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 160px;
+  border: 2px solid var(--td-brand-color);
+}
+.reason-container .reason-btn-group .common-button:hover,
+.reason-container .reason-btn-group .common-button-active {
+  background-color: var(--td-brand-color);
+  color: #ffffff;
+}
+.reason-container ._reasons-card2_video {
+  flex-basis: 110%;
+}
+.reason-container ._reasons-card2_video video {
+  width: 100%;
+}
+.reason-container ._reasons-card2_content {
+  font-size: 24px;
+  height: calc(100% - 90px);
+  display: flex;
+  align-items: center;
+}
+
 ._about-card2 {
   display: flex;
   gap: 40px;
@@ -256,6 +323,7 @@
   background: radial-gradient(#c4caef, transparent);
 }
 ._about-card2_content {
+  font-size: 24px;
   width: 200%;
 }
 ._about-card2_video {
@@ -473,18 +541,18 @@
 
 /* 主题配置 */
 :root {
-  --td-brand-color-light: #1b385c;
-  --td-brand-color: #29548d;
-  --td-text-color-primary: #aac8ee;
+  --td-brand-color-light: #46350d;
+  --td-brand-color: #9d7736;
+  --td-text-color-primary: #f4e9db;
   --td-bg-color-container: #021024;
-  --td-gray-color-13: #0f1a28;
+  --td-gray-color-13: #ca9430;
   --td-gray-color-10: #5a7ca5;
-  --td-gray-color-11: #658ab9;
+  --td-gray-color-11: #e6dec2;
   --td-font-body-large: 20px / var(--td-line-height-body-large)
     var(--td-font-family);
 }
 #root {
-  background: #fff;
+  background: linear-gradient(45deg, var(--td-gray-color-11), var(--td-text-color-primary));
   color: var(--td-brand-color-light);
 }
 .padding-10 {
@@ -525,6 +593,8 @@
   text-align: center;
   font-variant-ligatures: contextual;
   font-family: "Times New Roman", Times, serif;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.1em;
+  font-size: 30px;
+  margin-top: -10px;
 }
 
