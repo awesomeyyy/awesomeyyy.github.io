@@ -168,14 +168,14 @@
   justify-content: space-between;
 }
 .card-title:hover {
-  color: var(--td-brand-color-6);
+  color: var(--td-gray-color-13);
 }
 .card-title::after {
   content: "";
   position: absolute;
   width: 140px;
   height: 4px;
-  background-color: black;
+  background-color: var(--td-gray-color-13);
   bottom: -20px;
 }
 .card-btn {
@@ -347,7 +347,7 @@
   display: flex;
   border-radius: 10px;
   overflow: hidden;
-  background: linear-gradient(45deg, var(--td-brand-color-light), #a7a7ab);
+  background: linear-gradient(45deg, var(--td-brand-color-light), #d7998d);
 }
 
 .interview {
@@ -541,18 +541,24 @@
 
 /* 主题配置 */
 :root {
-  --td-brand-color-light: #46350d;
-  --td-brand-color: #9d7736;
+  --td-brand-color-light: #d39c93;
+  --td-brand-color: #d46f5d;
   --td-text-color-primary: #f4e9db;
   --td-bg-color-container: #021024;
-  --td-gray-color-13: #ca9430;
-  --td-gray-color-10: #a5895a;
-  --td-gray-color-11: #e6dec2;
+  --td-gray-color-13: #ff8771;
+  --td-gray-color-10: #e17562;
+  --td-gray-color-11: #fee6da;
   --td-font-body-large: 20px / var(--td-line-height-body-large)
     var(--td-font-family);
 }
+@font-face {
+  font-family: 'CustomFont';
+  src: url(/eff2c96969ea03c0140a.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 #root {
-  background: linear-gradient(45deg, var(--td-gray-color-11), var(--td-text-color-primary));
+  background: linear-gradient(45deg, var(--td-gray-color-11), var(--td-text-color-primary), var(--td-gray-color-11));
   color: var(--td-brand-color-light);
 }
 .padding-10 {
