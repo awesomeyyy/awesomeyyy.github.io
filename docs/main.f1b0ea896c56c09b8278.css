@@ -61,7 +61,7 @@
   width: 100%;
 }
 ._layout .swiper-item-text h1 {
-  font-size: 80px;
+  font-size: 120px;
   font-weight: 400;
   color: #fff;
 }
@@ -517,26 +517,25 @@
 }
 
 .dark-background {
-  color: #ffffff;
-  background-color: var(--td-gray-color-13);
+  background-size: cover;
+  border: none;
+  background-repeat: no-repeat;
   padding: 15px;
   font-size: 20px;
-  border: 1px dashed;
 }
 .dark-background p {
   text-indent: 40px;
+  padding: 0 10%;
 }
 
 .donation > div {
   margin-bottom: 40px;
 }
 .donation .donation-article {
-  background-color: var(--td-gray-color-13);
+  font-family: cursive;
+  width: 70%;
   border-radius: 10px;
-  padding: 20px;
-  border: 1px solid #719acd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+  margin: 0 auto;
 }
 
 /* 主题配置 */
